@@ -26,6 +26,10 @@ namespace DemoMVCProjectJquery.Models
         public Nullable<int> Salary { get; set; }
         [DisplayName("Image")]
         public string ImagePath { get; set; }
+
+        [Display(Name = "JoinDate")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+        [DataType(DataType.Date)]
         public string Date { get; set; }
 
 
